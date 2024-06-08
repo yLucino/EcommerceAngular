@@ -1,0 +1,41 @@
+<header>
+  <div class="container">
+    <a class="logo" routerLink="/">
+      <img src="assets/image/LogoUrbanStyle300px.jpg">
+      UrbanStyle
+    </a>
+    <nav>
+      <ul>
+        <li>
+          <app-search></app-search>
+        </li>
+        <li>
+          <a routerLink="/login">Login</a>
+        </li>
+        <li class="menu-container">
+          <a routerLink="/dashboard">Luciano</a>
+          <div class="menu">
+            <a routerLink="/profile">
+              <span class="material-icons-outlined">person</span>
+              Profile
+            </a>
+            <a routerLink="/orders">
+              <span class="material-icons-outlined">receipt_long</span>
+              Orders
+            </a>
+            <a><span class="material-icons-outlined">logout</span>
+              Logout
+            </a>
+          </div>
+        </li>
+        <li>
+          <a class="cart-nav" routerLink="/cart-page">
+            <span class="material-icons-outlined">shopping_cart</span>
+            <span class="icon">3</span>
+          </a>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+</header>
