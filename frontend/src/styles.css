@@ -1,6 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'material-icons/iconfont/material-icons.css';
 
+:root {
+  --color-Green: hsl(75, 94%, 57%);
+  --color-White: hsl(0, 0%, 100%);
+  --color-Grey: hsl(0, 0%, 20%);
+  --color-DarkGrey: hsl(0, 0%, 12%);
+  --color-OffBlack: hsl(0, 0%, 8%);
+}
+
 * {
   font-family: Open Sans, Roboto, Arial;
   box-sizing: border-box;

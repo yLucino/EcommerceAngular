@@ -1,25 +1,31 @@
 header {
   position: relative;
-  background-color: #191919;
-  padding: 0;
-  border-radius: 0 0 1rem 1rem;
+  background-color: var(--color-White);
   padding: 15px;
+  border-bottom: 1px solid var(--color-DarkGrey);
+}
+
+nav {
+  display: flex;  
+  align-items: center;
 }
 
 a {
-  color: #fff; 
+  color: var(--color-DarkGrey); 
+  transition: all .1s ease-in-out;
 }
 
 a:hover {
-  background: #777777a4;
-  cursor: pointer;
+  box-shadow:inset -9px 10px 71px -28px rgba(0, 0, 0, 0.226);
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 .container {
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
 }
 
 a.logo {
@@ -30,6 +36,12 @@ a.logo {
 a.logo img {
   width: 30px;
   height: 30px;
+  border-radius: 20px 5px 0 5px;
+}
+
+.app-search {
+  display: flex;
+  align-items: center;
 }
 
 ul {
@@ -48,10 +60,10 @@ ul li {
 }
 
 a span.icon {
-  background: #fff;
-  color: #191919;
+  background: var(--color-DarkGrey);
+  color: var(--color-White);
   padding: .1rem .45rem;
-  border-radius: 100rem;
+  border-radius: 50%;
   font-size: .9rem;
   font-weight: bold;
 }
@@ -63,9 +75,11 @@ a span.icon {
 .menu {
   position: absolute;
   z-index: 1;
-  background: #191919;
+  background: var(--color-White);
+  box-shadow: 0px 0px 36px -13px rgba(0,0,0,0.75);
   display: none;
-  border-radius: 0 1rem 1rem 1rem;
+  padding: 5px;
+  border-radius: 1rem;
 }
 
 .menu-container:hover .menu {
